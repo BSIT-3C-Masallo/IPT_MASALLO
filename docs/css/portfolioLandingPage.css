@@ -1,0 +1,756 @@
+@font-face{
+
+    font-family:'HYWenHei';
+
+    src:url('../fonts/zhcn.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+
+
+ /* Global Styles */
+
+ html, body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: 'HYWenHei', sans-serif;
+
+    color: #3B3B3B;
+
+    background-color: #F9F9F9;
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+header {
+
+    
+
+    background: linear-gradient(to bottom, #324B3A, #6BAF92);
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 3px solid #477951;
+
+    position: relative;
+
+}
+
+
+
+header img {
+
+    margin-right: 10px;
+
+}
+
+
+
+header h1 {
+
+    color: #F1E9D2;
+
+    margin: 0;
+
+}
+
+#toggle-btn{
+
+    background-color: #6BAF92;  
+
+    color: white;                
+
+    font-size: 30px;             
+
+    border: none;               
+
+    padding: 10px 15px;          
+
+    border-radius: 5px;         
+
+    cursor: pointer;            
+
+                 
+
+    transition: background-color 0.3s ease; 
+
+}
+
+#toggle-btn:hover{
+
+    background-color: #477951;
+
+}
+
+/* Sidebar Navigation */
+
+#sidebar {
+
+    position: fixed;
+
+    top: 50%;
+
+    left: 0;
+
+    transform: translateY(-50%);
+
+    background-color: #324B3A;
+
+    width: 200px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+#sidebar ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+
+#sidebar ul li {
+
+    margin: 15px 0;
+
+}
+
+
+
+#sidebar ul li button {
+
+    background-color: #6BAF92;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    width: 100%;
+
+    text-align: left;
+
+}
+
+
+
+#sidebar ul li button:hover {
+
+    background-color: #477951;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* Landing Page Styles */
+
+#landing-page {
+
+    width: 100%;
+
+}
+
+
+
+#introduction {
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: url('../images/qd5iyigs9tl91.jpg') no-repeat center center/cover;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+.profile-pic{
+
+    width:250px;
+
+    height:250px;
+
+    display:block;
+
+    border-radius: 50%;
+
+    margin-top: 20px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+#introduction h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+
+    color: #F1E9D2;
+
+}
+
+
+
+#introduction p {
+
+    font-size: 1.2rem;
+
+    max-width: 600px;
+
+    line-height: 1.5;
+
+    margin: 0 auto 30px;
+
+}
+
+
+
+#introduction button {
+
+    background-color: #6BAF92;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+#introduction button:hover {
+
+    background-color: #477951;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* About Me Section */
+
+#about-me {
+
+    padding: 50px 20px;
+
+    background: url('../images/sumeru-genshin-impact-thumb.jpg') no-repeat center center/cover;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+
+
+#about-me h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#about-me p {
+
+    font-size: 1.2rem;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* Skills Section */
+
+#skills-summary {
+
+    padding: 50px 20px;
+
+    background: url('../images/5073d1fa8c07140698de18e3215e8424_3136169823480302179.webp') no-repeat center center/cover;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+
+
+#skills-summary h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#skills-summary p {
+
+    font-size: 1.2rem;
+
+    margin: 10px 0;
+
+}
+
+
+
+/* My Projects Section */
+
+#my-projects {
+
+    padding: 50px 20px;
+
+    background: url('../images/85556b00eb4d888247b843c8fdac2882_5714554676891089013.webp') no-repeat center center/cover;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+
+
+#my-projects h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* Grid Layout for Project Cards */
+
+.project-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 20px;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+
+
+.project-thumbnail {
+
+    width: 200px;
+
+    height: 200px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.project-thumbnail:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+.project-info h3 {
+
+    margin-top: 10px;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+.project-info p {
+
+    margin: 5px 0;
+
+    font-size: 1rem;
+
+    max-height: 150px;  
+
+    overflow: hidden;  
+
+    text-overflow: ellipsis;  
+
+    line-height: 1.5;
+
+}
+
+
+
+
+
+#my-projects .projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+
+    gap: 20px;
+
+    justify-items: center;
+
+}
+
+
+
+.project-info button {
+
+    background-color: #6BAF92;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+.project-info button:hover {
+
+    background-color: #477951;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+#my-projects {
+
+    padding: 50px 20px;
+
+    background: url('../images/85556b00eb4d888247b843c8fdac2882_5714554676891089013.webp') no-repeat center center/cover;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+
+
+#my-projects h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+.project-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 20px;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+
+
+.project-thumbnail {
+
+    width: 200px;
+
+    height: 200px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+
+    margin: 0 auto;
+
+}
+
+
+
+.project-thumbnail:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+.project-info h3 {
+
+    margin-top: 10px;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+.project-info p {
+
+    margin: 5px 0;
+
+    font-size: 1rem;
+
+    max-height: 150px;  
+
+    overflow: hidden;  
+
+    text-overflow: ellipsis;  
+
+    line-height: 1.5;
+
+}
+
+
+
+
+
+#my-projects .projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+
+    gap: 20px;
+
+    justify-items: center;
+
+}
+
+
+
+.project-info button {
+
+    background-color: #6BAF92;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+.project-info button:hover {
+
+    background-color: #477951;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Contact Me Section */
+
+#contact-me {
+
+    padding: 50px 20px;
+
+    background: url('../images/sumeru-genshin-impact-thumb.jpg') no-repeat center center/cover;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+
+
+#contact-me h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#contact-me p {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+
+
+.social-links a img {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+.social-links a img:hover {
+
+    transform: scale(1.1);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+
+    background-color: #2b4c39;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 1rem;
+
+}
+

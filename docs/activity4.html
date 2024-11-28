@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/portfolioLandingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <button id="toggle-btn" onclick="toggleNav()">☰</button>
+        <img src="./images/logo.png" width="100">
+        <h1>Portfolio of Masallo</h1>
+        
+        <nav id="sidebar">
+            
+            <ul>
+                <li><button onclick="scrollToSection('introduction')">Home</button></li>
+                <li><button onclick="scrollToSection('about-me')">About Me</button></li>
+                <li><button onclick="scrollToSection('skills-summary')">Skills</button></li>
+                <li><button onclick="scrollToSection('my-projects')">Projects</button></li>
+                <li><button onclick="scrollToSection('contact-me')">Contact Me</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="landing-page">
+
+        <!-- Landing Section -->
+        <section id="introduction">
+            <br><br>
+            <img src="./images/profile.jpeg" alt="1x1" class="profile-pic">
+            <h1>Hi, I'm Jefferson C. Masallo</h1>
+            <p>A enthusiatic 3rd-year BSIT student of CMU that is eager to solve day-to-day real world problems, and formulate more efficient programs.</p>
+            <button onclick="window.scrollTo(0, document.body.scrollHeight)">View My Work</button>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I'm Jefferson C. Masallo, 20 years old, born on September 26, 2003. I am currently pursuing a Bachelor of Science in Information Technology (BSIT) and am in my 3rd year. I am passionate about Back-ends of Websites, database management, and contributing to impactful projects.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-summary">
+            <h2>Programming Skills</h2>
+            <p><strong>Java</strong> - Proficiency: ★★★☆☆</p>
+            <p><strong>SQL</strong> - Proficiency: ★★★☆☆</p>
+            <p><strong>Python</strong> - Proficiency: ★★☆☆☆</p>
+            <p><strong>Ejs</strong> - Proficiency: ★★★★☆</p>
+           
+        </section>
+
+        <!-- My Projects Section -->
+        <section id="my-projects">
+            <h2>My Projects</h2>
+        
+            <div class="project-card">
+                <img src="./images/logo.png" alt="SIA Webpage" class="project-thumbnail">
+                <div class="project-info">
+                    <h2>System Integration and Architecture EJS Page</h2>
+                    <h3>Status: Completed</h3>
+                    <p>
+                        This project is assigned to us by our professor in with an objective of increasing our mastery level in programming ejs.
+                        For more Info Click the button below
+                    </p>
+                    <button>More Info</button>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <img src="./images/logo.png" alt="Animal Shelter DB" class="project-thumbnail">
+                <div class="project-info">
+                    <h2>Advanced DB: Animal Shelter</h2>
+                    <h3>Status: On-going</h3>
+                    <p>
+                        A Project by our Professor. 
+                        This Project is all about creating a Database for an Animal shelter for better 
+                        monitoring of animals inside a shelter and a more convinient for the customer to adopt since
+                        we will create an interface for it. For more info such as programming language used check the 
+                        more info button below.
+
+                    </p>
+                    <button>More Info</button>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <img src="./images/logo.png" alt="Another Project" class="project-thumbnail">
+                <div class="project-info">
+                    <h2>System Integration and Architecture Quiz Page</h2>
+                    <h3>Status: On-going</h3>
+                    <p>This projects is all about creating a quiz page where the question would be fetch from our mongoDB.
+                        For more info check the button below
+                    </p>
+                    <button>More Info</button>
+                </div>
+            </div>
+        
+        </section>
+        <section id="contact-me">
+            <h2>Contact Me</h2>
+            <p>Feel free to bombard me with unsubstantial messages with the following socials below:</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-youtube"></i>Youtube</a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-github"></i>Github</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Portfolio of Masallo. All rights reserved.</p>
+    </footer>
+
+    
+
+</body>
+</html>
+
